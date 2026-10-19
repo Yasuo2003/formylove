@@ -364,14 +364,16 @@
         margin: 1.1rem 0;
       }
       .w {
-        padding: 0.75rem 0.6rem;
-        border-radius: 16px;
-        background: rgba(255, 255, 255, 0.08);
-        border: 1px solid rgba(255, 182, 213, 0.22);
+        padding: 0.65rem 0.5rem;
+        border-radius: 14px;
+        /* Tăng nền đậm hơn một chút để chữ không bị chìm vào nền chính */
+        background: rgba(30, 8, 32, 0.65);
+        /* Viền sáng hơn để tạo khối rõ ràng */
+        border: 1px solid rgba(255, 182, 213, 0.45);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         opacity: 0;
-        transform: translateY(20px) scale(0.92);
-        transition: all 0.7s cubic-bezier(0.2, 1.2, 0.3, 1);
-        backdrop-filter: blur(5px);
+        transform: translateY(20px) scale(0.9);
+        transition: all 0.8s cubic-bezier(0.2, 1.4, 0.3, 1);
       }
       .w.on {
         opacity: 1;
@@ -385,17 +387,23 @@
       }
       .w b {
         display: block;
-        font-family: var(--serif);
-        font-size: 0.88rem;
-        color: #ffc2dc;
-        margin-bottom: 0.25rem;
+        font-family: var(--sans);
+        font-size: 0.9rem;
+        font-weight: 600;
+        /* Đổi tiêu đề sang màu vàng kim/hồng sáng để đọc rõ mồn một */
+        color: #ffd9a8;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+        margin: 0.2rem 0;
       }
       .w span {
-        font-size: 0.72rem;
+        font-size: 0.76rem;
         font-weight: 400;
-        opacity: 0.88;
-        line-height: 1.4;
+        /* Đổi nội dung thành màu trắng kem sáng, tăng độ rõ */
+        color: #ffffff;
+        opacity: 0.95;
+        line-height: 1.5;
         display: block;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
       }
 
       .quote {
